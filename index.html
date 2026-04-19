@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a1a">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Gemini_Generated_Image_ixzb0iixzb0iixzb.jpg">
+    <link rel="icon" type="image/jpeg" href="Gemini_Generated_Image_ixzb0iixzb0iixzb.jpg">
+    <title>TO-DO-Ress</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="genderModal" style="display: none;">
+        <div class="gender-content">
+            <h2 style="margin-bottom: 2rem; font-size: 2.5rem; color: #e6d160;">Choose Your Style</h2>
+            <button id="boyBtn" class="gender-btn boy-theme">Male 🚹</button>
+            <button id="girlBtn" class="gender-btn girl-theme">Female 🚺🌸</button>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Gemini_Generated_Image_ixzb0iixzb0iixzb.jpg" class="nav-logo-img" alt="TO-DO-Ress">
+            TO-DO-Ress
+        </div>
+        <button id="themeToggle" title="Toggle Theme">🌓</button>
+
+        <button id="notebookToggle" title="Magic Notebook">📜</button>
+        <button id="scrollResetBtn" class="fab" title="Reset Scroll">↺</button>
+    </nav>
+    
+    <div id="notebookOverlay" style="display: none;">
+        <div class="notebook-container">
+            <button id="closeNotebook" class="close-btn">×</button>
+            <div class="notebook-header">
+                <button id="newPageBtn">➕</button>
+                <select id="pageSelect"></select>
+                <input type="text" id="pageTitleInput" placeholder="Page Title">
+                <button id="deletePageBtn">🗑️</button>
+            </div>
+            <textarea id="magicNotes" placeholder="Your magical notes auto-save here... Scroll of infinite wisdom awaits your words."></textarea>
+        </div>
+    </div>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div class="parchment-container">
+            <h1>The RessWitchers</h1>
+            <p>Your magical tasks await...</p>
+            <form class="todo-form">
+                <input type="text" id="taskInput" placeholder="Enter your potion task..." autocomplete="off">
+                <button type="submit" id="addBtn">✦ Brew Task ✦</button>
+            </form>
+        </div>
+    </div>
+    <a href="https://www.instagram.com/ressay.0/" target="_blank" class="signature-tag">@Ressay</a>
+    <script src="script.js"></script>
+</body>
+
+</html>
